@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>LuaForge-Studio</title>
-    </head>
-    <body>
-        <h1>LuaForge-Studio</h1>
-    </body>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Supabase App</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+    h1 { color: #333; }
+    #todo-list { list-style: none; padding: 0; }
+    #todo-list li { padding: 10px; border-bottom: 1px solid #eee; }
+    input { padding: 10px; width: 70%; margin-right: 10px; }
+    button { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <h1>📝 我的 Todos</h1>
+  
+  <div>
+    <input type="text" id="new-task" placeholder="输入新任务...">
+    <button id="add-btn">添加</button>
+  </div>
+  
+  <ul id="todo-list">
+    <li>加载中...</li>
+  </ul>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
