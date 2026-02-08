@@ -1,5 +1,4 @@
 <div align="center">
-
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" alt="Waving Hand" width="65" height="65" />
 
 # Wisyh
@@ -11,7 +10,7 @@
 
 </div>
 
-Tech Stack
+## Tech Stack
 
 ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -22,9 +21,11 @@ Tech Stack
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 
-GitHub Stats
+## GitHub Stats
 
-Currently
+![Wisyh's GitHub stats](https://github-readme-stats.vercel.app/api?username=wisyh&show_icons=true&theme=radical)
+
+## Currently
 
 - Learning Android development with Jetpack Compose
 - Exploring cross-platform technologies  
