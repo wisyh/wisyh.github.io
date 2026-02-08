@@ -1,31 +1,98 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" style="color-scheme: dark;">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Supabase App</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
-    h1 { color: #333; }
-    #todo-list { list-style: none; padding: 0; }
-    #todo-list li { padding: 10px; border-bottom: 1px solid #eee; }
-    input { padding: 10px; width: 70%; margin-right: 10px; }
-    button { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; }
-    button:hover { background: #0056b3; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisyh - Android Developer</title>
+    <!-- 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 样式表 -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>📝 我的 Todos</h1>
-  
-  <div>
-    <input type="text" id="new-task" placeholder="输入新任务...">
-    <button id="add-btn">添加</button>
-  </div>
-  
-  <ul id="todo-list">
-    <li>加载中...</li>
-  </ul>
+    <!-- 动态背景 -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="grid-bg"></div>
 
-  <script type="module" src="/src/main.js"></script>
+    <!-- 导航栏 -->
+    <nav id="navbar">
+        <div class="logo">Wisyh</div>
+        <div class="nav-links">
+            <a class="nav-btn active" data-mouse>首页</a>
+            <a class="nav-btn" data-mouse>项目</a>
+            <a class="nav-btn" data-mouse>关于</a>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- Hero区域 -->
+        <section class="hero fade-in">
+            <div class="avatar-container">
+                <div class="avatar-glow"></div>
+                <img src="http://q.qlogo.cn/headimg_dl?spec=640&img_type=jpg&dst_uin=1447017701" alt="Wisyh" class="avatar">
+            </div>
+            
+            <div class="hero-badge">
+                <span>Android Developer</span>
+            </div>
+            
+            <h1>Hi, I'm <span>Wisyh</span></h1>
+            <div class="hero-role">安卓开发者 / 全栈学习者</div>
+            
+            <p class="hero-desc">
+                热衷于移动应用开发，探索跨平台技术。<br>
+                相信代码改变世界，持续学习永不止步。
+            </p>
+        </section>
+
+        <!-- 简介和技能 -->
+        <section class="intro-section fade-in">
+            <p class="intro-text">
+                正在深入学习 <strong>Lua</strong>、<strong>Java</strong>、<strong>Kotlin</strong>、<strong>Compose</strong>、<strong>HTML</strong>、<strong>PHP</strong>、<strong>C</strong> 等技术栈，<br>
+                专注于打造流畅、优雅的 Android 应用体验。
+            </p>
+            
+            <div class="skills-section">
+                <div class="skills-title">Learning Stack</div>
+                <div class="skills-cloud">
+                    <span class="skill-tag">Lua</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Kotlin</span>
+                    <span class="skill-tag">Jetpack Compose</span>
+                    <span class="skill-tag">Android SDK</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Android Studio</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="social-links">
+            <a class="social-btn" href="https://github.com/wisyh" target="_blank" title="GitHub">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+            </a>
+            <a class="social-btn" href="mqqapi://card/show_pslcard?uin=1447017701" title="QQ" onclick="openQQ()">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                </svg>
+            </a>
+        </div>
+        <p>© 2026 Wisyh. Crafted with code.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
