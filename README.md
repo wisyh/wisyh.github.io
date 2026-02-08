@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" alt="Waving Hand" width="65" height="65" />
+<img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/raw/master/Emojis/Travel%20and%20places/Fire.png" alt="Fire" width="65" height="65" />
 
 # Wisyh
 
@@ -23,7 +23,12 @@
 
 ## GitHub Stats
 
-![Wisyh's GitHub stats](https://github-readme-stats.vercel.app/api?username=wisyh&show_icons=true&theme=radical)
+<!-- GitHub Profile Summary Cards -->
+<div align="center">
+  
+![Wisyh's GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=wisyh&theme=radical)
+
+</div>
 
 ## Currently
 
